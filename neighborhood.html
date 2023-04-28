@@ -1,0 +1,49 @@
+<!doctypehtml>
+<html>
+<head>
+    <title>Neighborhood</title>
+    <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+<nav>
+    <ol>
+        <li class="crumb"><a href="./home.html">Home</a></li>
+        <li class="crumb"><a href="./profile.html">Profile</a></li>
+        <li class="crumb"><a href="./about.html">About</a></li>
+        <a href = 'neighborhood.html'>
+            Neighborhood
+        </a>
+    </ol>
+</nav>
+<br>
+The Lehi Main Street Historic District stretches from the Colonial House to the Hutchings Museum Institute.
+<br>
+<br>
+Restaurants:
+<br>
+<a class = 'restaurant' href = 'https://www.lehibakery.com/'>
+    Lehi Country Bakery
+</a>
+<br>
+<a class = 'restaurant' href = 'https://pizza.dominos.com/utah/lehi/115-w-main-st/'>
+    Domino's Pizza
+</a>
+<br>
+<button>
+    random
+</button>
+<br>
+<br>
+<a href = 'https://www.lehi-ut.gov/recreation/parks/'>
+    Lehi parks
+</a>
+
+<script>
+document.querySelector('button').addEventListener('click', function() {
+    window.location.href = document.querySelectorAll('.restaurant')[Math.floor(2 * Math.random())].href
+})
+</script>
+</body>
+</html>
